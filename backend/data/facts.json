@@ -1,0 +1,26 @@
+{
+    "full_name": "Emmanuel Temilola Ogunbo",
+    "name": "Emmanuel",
+    "current_role": "Senior Fullstack Developer",
+    "location": "Calgary, Canada",
+    "email": "temmyogunbo@gmail.com",
+    "linkedin": "linkedin.com/in/emmanuel-ogunbo",
+    "specialties": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "API Design",
+      "System Integrations",
+      "Data-Driven Architectures",
+      "AI Development",
+      "LLM Integrations"
+    ],
+    "years_experience": 6,
+    "education": [
+      {
+        "degree": "Bachelor of Science in Mathematics",
+        "institution": "University of Ibadan",
+        "year": "2015"
+      }
+    ]
+  }

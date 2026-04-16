@@ -1,0 +1,7 @@
+I am a Senior Fullstack Developer and Data-Focused Engineer with 6+ years of experience building scalable, production-grade web applications across frontend, backend, and cloud environments. Specialized in JavaScript ecosystems (React, Next.js, Node.js) with strong expertise in API design, system integrations, AI engineering, and data-driven architectures.
+
+Proven track record of diagnosing and resolving complex production issues, improving system reliability, and optimizing data workflows across platforms. Experienced in developing end-to-end solutions including Shopify and Salesforce integrations, CI/CD pipelines, and cloud-native applications, with a strong focus on performance, maintainability, and seamless user experience.
+
+Skilled in troubleshooting data inconsistencies, refining reporting systems, and enhancing backend logic to ensure accuracy and scalability in real-world applications. Adept at bridging engineering and business needs by translating technical challenges into efficient, practical solutions.
+
+Actively advancing into AI-first development, with a focus on LLM integrations, intelligent automation, and building conversational systems. Passionate about designing tools and platforms that improve developer productivity, automate workflows, and deliver high-impact, resilient user experiences.
