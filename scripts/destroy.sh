@@ -17,7 +17,7 @@ PROJECT_NAME=${2:-twin}
 
 echo "🗑️ Preparing to destroy ${PROJECT_NAME}-${ENVIRONMENT} infrastructure..."
 
-# Navigate to terraform directory
+# Navigate to terraform directory (inside backend)
 cd "$ROOT_DIR/backend/terraform"
 
 # Get AWS Account ID and Region for backend configuration
@@ -46,7 +46,6 @@ terraform workspace select "$ENVIRONMENT"
 
 echo "📦 Emptying S3 buckets..."
 
-# Get bucket names with account ID (matching Day 4 naming)
 FRONTEND_BUCKET="${PROJECT_NAME}-${ENVIRONMENT}-frontend-${AWS_ACCOUNT_ID}"
 MEMORY_BUCKET="${PROJECT_NAME}-${ENVIRONMENT}-memory-${AWS_ACCOUNT_ID}"
 
@@ -69,9 +68,10 @@ fi
 echo "🔥 Running terraform destroy..."
 
 # Create a dummy lambda zip if it doesn't exist (needed for destroy in GitHub Actions)
-if [ ! -f "../backend/lambda-deployment.zip" ]; then
+# Script is at ROOT_DIR/backend/terraform, so lambda zip is one level up at ROOT_DIR/backend/
+if [ ! -f "$ROOT_DIR/backend/lambda-deployment.zip" ]; then
     echo "Creating dummy lambda package for destroy operation..."
-    echo "dummy" | zip ../backend/lambda-deployment.zip -
+    echo "dummy" | zip "$ROOT_DIR/backend/lambda-deployment.zip" -
 fi
 
 # Run terraform destroy with auto-approve
