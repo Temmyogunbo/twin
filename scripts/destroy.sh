@@ -1,7 +1,5 @@
 #!/bin/bash
 set -e
-ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-echo "ROOT_DIR: $ROOT_DIR"
 
 # Check if environment parameter is provided
 if [ $# -eq 0 ]; then
@@ -18,7 +16,7 @@ PROJECT_NAME=${2:-twin}
 echo "🗑️ Preparing to destroy ${PROJECT_NAME}-${ENVIRONMENT} infrastructure..."
 
 # Navigate to terraform directory
-cd "$ROOT_DIR/backend/terraform"
+cd "$(dirname "$0")/../terraform"
 
 # Get AWS Account ID and Region for backend configuration
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
