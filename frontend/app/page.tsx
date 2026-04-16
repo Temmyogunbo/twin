@@ -9,7 +9,7 @@ export default function Home() {
             Emmanuel Ogunbo's Digital Twin
           </h1>
           <p className="text-center text-gray-600 mb-8">
-            Digital Twin of Emmanuel Ogunbo
+            You can talk to Emmanuel Ogunbo here.
           </p>
 
           <div className="h-[600px]">
